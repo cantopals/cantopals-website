@@ -17,7 +17,7 @@ export default function NerkoTemplate() {
     
         <Layout>
 			 <Head>
-                <title>Landing 01 || Nerko Next JS Template</title>
+                <title>CantoPals NFT Collection</title>
             </Head>			
 			<HeroBannerOne/>
 			<BrandOne/>
