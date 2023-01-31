@@ -52,7 +52,7 @@ const HomeOneCta = () => {
         functionName: 'claim'
     };
 
-    useEffect(() => {
+    /* useEffect(() => {
         if (error) {
             console.log({ error });
         }
@@ -62,7 +62,7 @@ const HomeOneCta = () => {
         if (data) {
             console.log({ data });
         }
-    })
+    }) */
 
     return (
         <>
