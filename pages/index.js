@@ -20,24 +20,10 @@ export default function NerkoTemplate() {
                 <title>CantoPals NFT Collection</title>
             </Head>			
 			<HeroBannerOne/>
-			<BrandOne/>
-			<Divider/>
-			<HomeOneMinting/>
-			<Divider />
-			<HomeOneNumber/>
-			<Divider/>
-			<HomeOneAbout/>
 			<Divider/>
 			<HomeOneCollection title="yes"/>
-			<Divider/>    
-			<HomeOneRoadMap/> 
-			<Divider/> 
-			<TeamOne/>
-			<Divider/> 
-			<FaqOne/>
 			<Divider/> 
 			<HomeOneCta/>
-			<Divider/> 
         </Layout>
         
   	);

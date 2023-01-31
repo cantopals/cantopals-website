@@ -11,7 +11,6 @@ const Layout = ({
       <div className="wrap">
         {showFooter && <Header headerSetting={layoutSettings.header} />}
           {children}
-        {showFooter && <Footer footerSetting={layoutSettings.footer} />}
       </div>
      
     </>
