@@ -65,9 +65,6 @@ const Header = ({ headerSetting = {} }) => {
                                                 <i className="uk-icon unicon-wallet"></i>
                                             </a>
                                         }
-                                        <a href="#uni_mobile_menu" data-uk-toggle="">
-                                            <i className="uk-icon uk-icon-medium unicon-menu"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

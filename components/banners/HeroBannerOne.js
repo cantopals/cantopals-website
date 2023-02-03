@@ -18,7 +18,7 @@ const HeroBannerOne = () => {
                                     <div className="uk-panel uk-position-z-index uk-text-center uk-text-left@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                         <img className="uk-position-left" width="16" src="images/objects/circle-01.png" alt="object" style={{top: "16%", left: "-16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;" />
                                         <img className="uk-position-bottom-left" width="24" src="images/objects/circle-03.png" alt="object" style={{bottom: "-16%", left: "16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;" />
-                                        <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Canopals is FINALLY here folks!</h2>
+                                        <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Cantopals is FINALLY here folks!</h2>
                                         <p className="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Not just a pfp collection.</p>
                                     </div>
                                 </div>
