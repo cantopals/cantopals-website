@@ -20,7 +20,7 @@ const HeroBannerOne = () => {
                                         <img className="uk-position-left" width="16" src="images/objects/circle-01.png" alt="object" style={{top: "16%", left: "-16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;" />
                                         <img className="uk-position-bottom-left" width="24" src="images/objects/circle-03.png" alt="object" style={{bottom: "-16%", left: "16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;" />
                                         <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Canopals is FINALLY here folks!</h2>
-                                        <p className="uk-text-xlarge uk-width-xlarge@m uk-text-muted">The bluechip NFT collection of Canto degens.</p>
+                                        <p className="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Not just a pfp collection.</p>
                                     </div>
                                 </div>
                                 <div className="uk-width-6-12@m uk-flex-center">
