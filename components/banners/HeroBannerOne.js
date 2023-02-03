@@ -19,17 +19,12 @@ const HeroBannerOne = () => {
                                         <img className="uk-position-top-left" width="44" src="images/objects/ethereum-01.png" alt="object" style={{top: "-20%", left: "50%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;" />
                                         <img className="uk-position-left" width="16" src="images/objects/circle-01.png" alt="object" style={{top: "16%", left: "-16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;" />
                                         <img className="uk-position-bottom-left" width="24" src="images/objects/circle-03.png" alt="object" style={{bottom: "-16%", left: "16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;" />
-                                        <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Supercharge your NFT Adventure</h2>
-                                        <p className="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Find the right NFT collections to buy within the platform.</p>
-                                        <a href="#" className="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
-                                            <span>View in OPENSEA</span>
-                                            <i className="uk-icon-small unicon-arrow-right uk-text-bold"></i>
-                                        </a>
+                                        <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Canopals is FINALLY here folks!</h2>
+                                        <p className="uk-text-xlarge uk-width-xlarge@m uk-text-muted">The bluechip NFT collection of Canto degens.</p>
                                     </div>
                                 </div>
                                 <div className="uk-width-6-12@m uk-flex-center">
                                     <div className="uk-panel" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
-                                        <img className="uk-position-left uk-text-primary" width="44" src="images/objects/bitcoin-01.png" alt="object" style={{top: "75%", left: "-20%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 460;"  />
                                         <img className="uk-position-right" width="28" src="images/objects/x.png" alt="object" style={{top: "-4%", right: "16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 480;" />
                                         <img className="uk-position-right uk-opacity-10" width="300" src="images/blob-dashed.svg" alt="Blog dashed" style={{top: "-10%", right: "16%", fill: "transparent"}} />
                                         <svg style={{top: "-20%"}} className="uk-position-right uk-opacity-30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -55,17 +50,6 @@ const HeroBannerOne = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a className="uni-circle-text uk-background-white dark:uk-background-gray-80 uk-box-shadow-large uk-visible@m" href="#view_in_opensea">
-                                        <svg className="uni-circle-text-path uk-text-secondary uni-animation-spin" viewBox="0 0 100 100" width="120" height="120">
-                                                <defs>
-                                                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0">
-                                                </path></defs>
-                                                <text style={{fontSize:"12px"}}>
-                                                    <textPath xlinkHref="#circle">view in opensea • view in opensea •</textPath>
-                                                </text>
-                                            </svg>
-                                            <i className="uk-position-center uk-text-secondary uk-icon-medium@m unicon-arrow-up-right uk-text-bold"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

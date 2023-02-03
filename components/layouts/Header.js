@@ -39,19 +39,13 @@ const Header = ({ headerSetting = {} }) => {
                                 </div>
                                 <div className="uk-navbar-right uk-flex-1 uk-flex-right">
                                     <ul className="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
-                                        <li><a href="#uni_minting">Minting</a></li>
-                                        <li><a href="#uni_about">About</a></li>
                                         <li><a href="#uni_collection">Collection</a></li>
-                                        <li><a href="#uni_roadmap">Roadmap</a></li>
-                                        <li><a href="#uni_team">Team</a></li>
+                                        <li><a href="#uni_minting">Mint</a></li>
                                     </ul>
                                     <div className="uk-navbar-item">
                                         <ul className="uk-subnav uk-subnav-small uk-visible@m">
                                             <li>
-                                                <Link href="#"><i className="uk-icon unicon-logo-twitter"></i></Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"><i className="uk-icon unicon-logo-discord"></i></Link>
+                                                <Link href="https://twitter.com/CantoPals"><i className="uk-icon unicon-logo-twitter"></i></Link>
                                             </li>
                                         </ul>
                                         {isWeb3Enabled ?
