@@ -16,7 +16,6 @@ const HeroBannerOne = () => {
                             <div className="uk-grid uk-grid-2xlarge uk-flex-middle uk-flex-between" data-uk-grid data-uk-height-viewport="offset-top: true; offset-bottom: 20;">
                                 <div className="uk-width-5-12@m">
                                     <div className="uk-panel uk-position-z-index uk-text-center uk-text-left@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
-                                        <img className="uk-position-top-left" width="44" src="images/objects/ethereum-01.png" alt="object" style={{top: "-20%", left: "50%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;" />
                                         <img className="uk-position-left" width="16" src="images/objects/circle-01.png" alt="object" style={{top: "16%", left: "-16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;" />
                                         <img className="uk-position-bottom-left" width="24" src="images/objects/circle-03.png" alt="object" style={{bottom: "-16%", left: "16%"}} data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;" />
                                         <h2 className="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Canopals is FINALLY here folks!</h2>
