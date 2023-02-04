@@ -92,7 +92,7 @@ const HomeOneCta = () => {
                             <ul className="uk-card uk-card-small uk-card-large@m uk-radius uk-radius-large@m uk-width-2xlarge@m uk-margin-auto uk-box-shadow-xsmall dark:uk-background-white-5" data-uk-accordion="collapsible: false" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                 <li>
                                     <div className="uk-accordion-content uk-padding-small-bottom">
-                                        <p className="uk-text-small uk-text-large@m uk-text-muted">Insufficent Balance</p>
+                                        <p className="uk-text-small uk-text-large@m uk-text-muted">{error?.data?.message}</p>
                                     </div>
                                 </li>
                             </ul>
