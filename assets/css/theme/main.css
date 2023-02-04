@@ -5192,6 +5192,7 @@ body {
   font-size: var(--body-font-size, 16px);
   font-weight: var(--body-font-weight, 400);
   letter-spacing: var(--body-font-spacing, normal);
+  /* background-image: url("../../../public/images/matrix-bg-2.gif"); */
   background-color: var(--body-color-background, white);
   color: inherit;
   position: relative
@@ -12837,8 +12838,8 @@ html.bp-xl .uk-form-2xsmall\@xl {
   inset: 0px;
   z-index: -1;
   transition: 200ms ease;
-  background-color: var(--gradient-first);
-  background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second))
+  background-color: green;
+  background-image: linear-gradient(darkgreen, green)
 }
 
 .uk-button-gradient:hover::after {
@@ -24087,7 +24088,7 @@ html.bp-xl .uk-button-2xsmall\@xl.uk-button-justify {
 }
 
 .uk-section {
-  padding-top: var(--sizes-section);
+  padding-top: var(--sizes-section-2xlarge);
   padding-bottom: var(--sizes-section)
 }
 
