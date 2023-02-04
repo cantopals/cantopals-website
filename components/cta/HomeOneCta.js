@@ -14,7 +14,7 @@ const HomeOneCta = () => {
     const { data, error, runContractFunction, isFetching, isLoading } = useWeb3Contract();
     let [mintAmount, setMintAmount] = useState(1);
     let [claimable, setClaimable] = useState(false);
-    const mintFee = 1;
+    const mintFee = 12;
 
     useEffect(() => {
         if (account) {
@@ -92,7 +92,7 @@ const HomeOneCta = () => {
                             <ul className="uk-card uk-card-small uk-card-large@m uk-radius uk-radius-large@m uk-width-2xlarge@m uk-margin-auto uk-box-shadow-xsmall dark:uk-background-white-5" data-uk-accordion="collapsible: false" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                 <li>
                                     <div className="uk-accordion-content uk-padding-small-bottom">
-                                        <p className="uk-text-small uk-text-large@m uk-text-muted">{error?.data?.message}</p>
+                                        <p className="uk-text-small uk-text-large@m uk-text-muted">Insufficient Balance. Require at least {mintFee} CANTOs (plus gas) to mint.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -103,7 +103,7 @@ const HomeOneCta = () => {
                             <ul className="uk-card uk-card-small uk-card-large@m uk-radius uk-radius-large@m uk-width-2xlarge@m uk-margin-auto uk-box-shadow-xsmall dark:uk-background-white-5" data-uk-accordion="collapsible: false" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                 <li>
                                     <div className="uk-accordion-content uk-padding-small-bottom">
-                                        <p className="uk-text-small uk-text-large@m uk-text-muted">Transaction Successful<Link href={`https://testnet-explorer.canto.neobase.one/tx/${data?.hash}`} target={'_blank'}>Check Block Explorer!</Link></p>
+                                        <p className="uk-text-small uk-text-large@m uk-text-muted">Transaction Successful<Link href={`https://evm.explorer.canto.io/tx/${data?.hash}`} target={'_blank'}>Check Block Explorer!</Link> (It may take a few minutes for the Transaction to get confirm though.)</p>
                                     </div>
                                 </li>
                             </ul>
