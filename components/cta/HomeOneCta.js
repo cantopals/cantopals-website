@@ -21,16 +21,6 @@ const HomeOneCta = () => {
     const mintFee = chainId === testnetChainId ? 1 : 12; // If not Testnet, 12
     const maxSupply = 3333;
 
-    useEffect(() => {
-        if (account) {
-            whitelistedAddresses.forEach((address) => {
-                if (account.toLowerCase().localeCompare(address.toLowerCase()) === 0) {
-                    setClaimable(true);
-                }
-            })
-        }
-    }, [account])
-
     const decrementMintAmount = () => {
         if (mintAmount > 1) {
             setMintAmount(mintAmount - 1);
@@ -75,7 +65,24 @@ const HomeOneCta = () => {
             .then((result) => {
                 setTotalSupply(parseInt(result?._hex, 16))
             })
-    }, [isWeb3Enabled])
+    }, [isWeb3Enabled]);
+
+    useEffect(() => {
+        if (account) {
+            whitelistedAddresses.forEach((address) => {
+                if (account.toLowerCase().localeCompare(address.toLowerCase()) === 0) {
+                    setClaimable(true);
+                }
+            })
+        }
+    }, [account]);
+
+    useEffect(() => {
+        const element = document.getElementById(`${error ? 'error' : 'data'}-message`);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [error, data]);
 
     return (
         <>
@@ -102,7 +109,7 @@ const HomeOneCta = () => {
                         </div>
                     </div>
                     {error?.data?.message &&
-                        <div className="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <div id="error-message" className="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
                             <ul className="uk-card uk-card-small uk-card-large@m uk-radius uk-radius-large@m uk-width-2xlarge@m uk-margin-auto uk-box-shadow-xsmall dark:uk-background-white-5" data-uk-accordion="collapsible: false" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                 <li>
                                     <div className="uk-accordion-content uk-padding-small-bottom">
@@ -113,7 +120,7 @@ const HomeOneCta = () => {
                         </div>
                     }
                     {data && data?.hash && !isLoading &&
-                        <div className="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <div id="data-message" className="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
                             <ul className="uk-card uk-card-small uk-card-large@m uk-radius uk-radius-large@m uk-width-2xlarge@m uk-margin-auto uk-box-shadow-xsmall dark:uk-background-white-5" data-uk-accordion="collapsible: false" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                                 <li>
                                     <div className="uk-accordion-content uk-padding-small-bottom">
