@@ -16,9 +16,9 @@ const HomeOneCta = () => {
     let [mintAmount, setMintAmount] = useState(1);
     let [claimable, setClaimable] = useState(false);
     let [totalSupply, setTotalSupply] = useState(0);
+    let [mintFee, setMintFee] = useState(12)
     const mainnetChainId = '0x1e14';
     const testnetChainId = '0x2e4'
-    const mintFee = chainId === testnetChainId ? 1 : 12; // If not Testnet, 12
     const maxSupply = 3333;
 
     const decrementMintAmount = () => {
@@ -54,6 +54,7 @@ const HomeOneCta = () => {
     }
 
     useEffect(() => {
+        chainId === mainnetChainId ? setMintFee(12) : setMintFee(1);
         if (chainId && chainId !== mainnetChainId) { //Should be 0x1e14, hex of 7700
             // console.log('CHAINID: ', chainId);
             switchNetwork(mainnetChainId)
