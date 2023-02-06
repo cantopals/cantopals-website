@@ -52,7 +52,7 @@ function MatrixBackground({ timeout = 50 }) {
                 background: '#000000',
                 overflow: 'hidden',
                 position: 'fixed',
-                height: '100% !important',
+                height: '100%',
                 width: '100%',
                 zIndex: -1,
                 left: '0',
